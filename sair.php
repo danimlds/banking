@@ -1,8 +1,3 @@
-<?php
-    session_start();
-    header("Location: index.php");
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,6 +11,13 @@
     <title>Banking</title>
 </head>
 <body>
+  <div class="container">
+      <div class="container-fluid">
+            <div class="jumbotron">
+                <h2>Prazer em visitar o maior banco da América Latina.</h2>
+            </div>
+        </div>
+  </div>
 
 
 

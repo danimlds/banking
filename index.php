@@ -36,16 +36,29 @@
 </head>
 <body>
 <div class="container">
-    <h1>Banking</h1>
-
-    Titular:<?php echo $info['titular'];?><br/>
-    Agência:<?php echo $info['agencia'];?><br/>
-    Conta:<?php echo $info['conta'];?><br/>
-    Saldo:<?php echo $info['saldo'];?><br/>
-    <a href="sair.php" class="badge badge-primary">Sair</a><br/>
+    <h2>Dados do Cliente</h2>
+    
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">Titular</th>
+        <th scope="col">Agência</th>
+        <th scope="col">Conta</th>
+        <th scope="col">Saldo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td scope="row"><?php echo $info['titular'];?></td>
+            <td scope="row"><?php echo $info['agencia'];?></td>
+            <td scope="row"><?php echo $info['conta'];?></td>
+            <td scope="row"><?php echo $info['saldo'];?></td>
+        </tr>
+    </tbody>
+    </table>
 
    <br/><br/>
-    <h3>Movimentação</h3>
+    <h2>Movimentação</h2>
     <a href="add-transacao.php" class="badge badge-primary">Realizar Transação</a><br/><br/><br/>
 
         <?php 
@@ -81,6 +94,9 @@
         </tr>
     </tbody>
     </table>
+
+    <a href="sair.php" class="badge badge-primary">Sair</a><br/>
+
 </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -89,6 +105,5 @@
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
-
 </body>
 </html>
