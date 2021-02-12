@@ -39,7 +39,7 @@
 </head>
 <body>
 <div class="container"> 
-    <form method="POST">
+    <form method="POST" style="padding-top: 150px;">
         <div class="form-group">
             <label for="">Agência:</label>
             <input type="text" name="agencia" class="form-control" placeholder="Número da Agência"/><br/><br/>

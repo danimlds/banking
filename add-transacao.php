@@ -48,7 +48,7 @@
 </head>
 <body>
     <div class="container">
-        <form method="POST">
+        <form method="POST" style="padding-top: 150px;">
             <div class="form-group">
                 <label for="">Tipo de Transação:</label>
                 <select class="form-control" name="tipo">

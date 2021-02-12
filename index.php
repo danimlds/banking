@@ -36,7 +36,7 @@
 </head>
 <body>
 <div class="container">
-    <h2>Dados do Cliente</h2>
+    <h2 style="padding-top: 150px;">Dados do Cliente</h2>
     
     <table class="table">
     <thead>
@@ -59,7 +59,7 @@
 
    <br/><br/>
     <h2>Movimentação</h2>
-    <a href="add-transacao.php" class="badge badge-primary">Realizar Transação</a><br/><br/><br/>
+    <a href="add-transacao.php" class="badge badge-primary" >Realizar Transação</a><br/><br/><br/>
 
         <?php 
             $sql = $pdo->prepare("SELECT * FROM historico WHERE id_conta = :id_conta ");
@@ -95,7 +95,19 @@
     </tbody>
     </table>
 
-    <a href="sair.php" class="badge badge-primary">Sair</a><br/>
+    <button class="btn btn-primary btn-sm" onclick="window.print()">
+        Imprimir Relatório
+        <i class="fa fa-print"></i>
+    </button><br /><br />
+
+
+
+    
+
+
+
+
+    <a href="sair.php" class="badge badge-primary" >Sair</a><br/><br/><br/>
 
 </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
